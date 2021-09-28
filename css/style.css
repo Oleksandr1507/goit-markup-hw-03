@@ -25,6 +25,7 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%; height: auto;
 }
 /*----------cursor-------------*/
 
@@ -128,6 +129,7 @@ text-transform: uppercase;
 color: var(--primary-title-color);
 width: 696px;
 margin: 0 auto;
+margin-bottom: 30px;
 }
 .hero-container {
     text-align: center;
@@ -141,18 +143,11 @@ margin: 0 auto;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: flex;
-justify-content: center
 letter-spacing: 0.06em;
 color: var(--primary-title-color);
 background-color: #2196F3;
-margin-top: 30px;
-margin-left: 500px;
-
-position: absolute;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-margin-top: 30px;
 }
 
   
@@ -179,8 +174,8 @@ margin-bottom: 10px;
     flex-wrap: wrap;
 }
 
-.benefits-item: {
-    flex-basis: calc ((100% - 120px)) / 4;
+.benefits-item: :nth-child(4) {
+    margin-right: 30px;
 }
 
 
@@ -214,9 +209,6 @@ margin-bottom: 50px;
 
 .work-list {
  display: flex;
-padding-bottom: 94px;
-margin-left: -30px;
-margin-top: 50px;
 }
     
 .work-item {
@@ -235,20 +227,21 @@ font-size: 36px;
 line-height: 1.16;
 color: var(--secondary-title-color);
 text-align: center;
-padding-top: 94px;
+margin-bottom: 50px;
 }
 
 .team-list {
     display: flex;
-    margin-left: -30px;
-    margin-top: 50px;
-    padding-bottom: 94px;
+ 
 }
 
 .team-item {
-     flex-basis: calc(100% / 4 -30px);
+flex-basis: calc(100% / 4 -30px);
  margin-left: 30px;
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
+
 
 .team-name {
  font-weight: 500;
@@ -274,6 +267,8 @@ text-align: center;
 
 .footer {
     background-color: #2F303A;
+     padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-container {
     display: flex;
@@ -319,17 +314,13 @@ color:  rgba(255, 255, 255, 0.6);
 
 
 .about-btn {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
 color: var(--secondary-title-color);
 }
 
 .about-button-list {
     display: flex;
-    padding-top: 94px;
     justify-content:center;
-    margin-bottom: 50px;
+margin-bottom: 50px;
 }
 
 .about-button-item:not(:last-child){
@@ -338,8 +329,11 @@ color: var(--secondary-title-color);
 .about-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
 }
+.about-list:nth-child(3n) {
+    margin-right: 0;
+}
+
 
 .about-item{
     flex-basis: calc(100% / 3 - 30px);
@@ -348,6 +342,9 @@ color: var(--secondary-title-color);
 }
 .img-back-down {
     padding-bottom: 20px;
+}
+.about-list:nth-child(n + 7) {
+margin-bottom: 0;
 }
 
 .about-btn:hover,

@@ -318,8 +318,8 @@ color: var(--secondary-title-color);
 }
 
 .about-button-list {
-    display: flex;
-    justify-content:center;
+display: flex;
+justify-content:center;
 margin-bottom: 50px;
 }
 
@@ -341,7 +341,7 @@ margin-bottom: 50px;
     margin-bottom: 30px;
 }
 .img-back-down {
-    padding-bottom: 20px;
+   margin-bottom: 20px;
 }
 .about-list:nth-child(n + 7) {
 margin-bottom: 0;

@@ -330,31 +330,23 @@ margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
 }
-.about-list:nth-child(3n) {
-    margin-right: 0;
-}
-
 
 .about-item{
     flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
 }
+.about-item:nth-child(n + 7) {
+margin-bottom: 0;
+}
 .img-back-down {
    margin-bottom: 20px;
-}
-.about-list:nth-child(n + 7) {
-margin-bottom: 0;
 }
 
 .about-btn:hover,
 .about-btn:focus {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
 color: var(--primary-title-color);
 background-color: #2196F3;
-padding-bottom: 4px;
 }
 
 

@@ -118,7 +118,11 @@ color:var(--primery-text-color);
 
 .hero {
     background: #2F303A;
+box-sizing: border-box;
+border-bottom: 1px solid blue;
 }
+    
+
 .hero-title {
 font-weight: 900;
 font-size: 44px;
@@ -148,6 +152,8 @@ color: var(--primary-title-color);
 background-color: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+padding: 10px 32px;
+
 }
 
   
@@ -173,10 +179,16 @@ margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
 }
-
-.benefits-item: :nth-child(4) {
-    margin-right: 30px;
+.benefits-item {
+   margin-right: 30px;
 }
+
+.benefits-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+
 
 
 .benefits-text {
@@ -215,6 +227,11 @@ margin-bottom: 50px;
  flex-basis: calc(100% / 3 -30px);
  margin-left: 30px;
 }
+.work-item:nth-child(-n + 1) {
+    margin-left: 0;
+}
+
+
 
 /*----------team-------------*/
 
@@ -232,7 +249,6 @@ margin-bottom: 50px;
 
 .team-list {
     display: flex;
- 
 }
 
 .team-item {
@@ -240,6 +256,9 @@ flex-basis: calc(100% / 4 -30px);
  margin-left: 30px;
  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+}
+.team-item:nth-child(-n + 1) {
+    margin-left: 0;
 }
 
 
@@ -274,8 +293,6 @@ text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -315,6 +332,7 @@ color:  rgba(255, 255, 255, 0.6);
 
 .about-btn {
 color: var(--secondary-title-color);
+padding: 6px 22px;
 }
 
 .about-button-list {
@@ -330,17 +348,22 @@ margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
 }
+.about-link {
+    display: block;
+}
 
 .about-item{
     flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
 }
+.about-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+
 .about-item:nth-child(n + 7) {
 margin-bottom: 0;
-}
-.img-back-down {
-   margin-bottom: 20px;
 }
 
 .about-btn:hover,
@@ -349,22 +372,21 @@ color: var(--primary-title-color);
 background-color: #2196F3;
 }
 
-
-
 .about-title {
 font-weight: 700;
 font-size: 18px;
 line-height: 2.00;
 letter-spacing: 0.06em;
 color: var(--secondary-title-color);
-margin-left: 24px;
+margin-bottom: 4px;
 }
 .about-text {
 font-size: 16px;
 line-height: 1.87;
 color: var(--primery-text-color);
-margin-bottom: 20px;
-padding-left: 24px;
+}
+.about-title-text {
+   padding: 20px 24px;
 }
 
 

@@ -48,12 +48,13 @@ section {
 
 .header {
     padding-top: 32px;
-    padding-bottom: 32px;
+   border: 1px #ECECEC;
 }
 .header-container {
     display: flex;
     align-items: center;
     padding-bottom: 25px;
+     border-bottom: 1px solid #ECECEC;
 }
 .header-logo {
 font-family: Raleway, sans-serif;
@@ -116,9 +117,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color:var(--primery-text-color);
-}
-.portfolio {
-    border-bottom: 1px solid #ECECEC;
 }
 
     
